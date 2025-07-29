@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 clearInterval(intervalId);
                 gameStarted = false;
                 alert('Game Over' + '\n' + 'Your Score: ' + score);
+                location.reload();
                 return;
             }
             updateSnake();
@@ -120,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
             gameStarted = true;
             document.addEventListener('keydown', changeDirection);
             
-            gameLoop(); // TODO: Implement game loop
+            gameLoop(); 
         }
     }
 
